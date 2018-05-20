@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MonitoringProcessNetworkStatisticks</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Interfaces</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget"/>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget_2"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget_3"/>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>437</width>
+              <height>367</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QGridLayout" name="gridLayout"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>Process name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fd</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Famili</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Local addr</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Remote addr</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <zorder>tableWidget</zorder>
+  <zorder>stackedWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
